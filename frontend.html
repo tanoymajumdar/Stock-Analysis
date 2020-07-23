@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>
+        <h1>
+            FrontEnd
+        </h1>
+    </title>
+</head>
+<body>
+    <form class="pure-form" id="pure-form" onsubmit="logit()" action="http://127.0.0.1:5000/raw" method="POST" >
+        <label for="comname">Commodity name:</label><br>
+        <input type="text" id="comname" name="comname"><br>
+        <label for="cryname">Crypto name:</label><br>
+        <input type="text" id="cryname" name="cryname"><br>
+        <label for="startday">Start:</label><br>
+        <input type="date" id="startday" name="startday"><br>
+        <label for="endday">End:</label><br>
+        <input type="date" id="endday" name="endday"><br>
+        <label for="interval">Interval:</label><br>
+        <input type="text" id="interval" name="interval"><br>
+        <label for="cor_type">Correlation Type:</label><br>
+        <input type="text" id="cor_type" name="cor_type"><br>
+        <input type="submit" value="Submit">
+      </form>
+
+      <script>
+          function logit(){
+            var data = document.getElementById("comname");
+            console.log(data.value);
+          }
+      </script>
+</body>
+</html>
